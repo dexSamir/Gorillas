@@ -1,0 +1,119 @@
+.mode-selector {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
+}
+
+.mode-selector-content {
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  padding: 40px;
+}
+
+.mode-selector h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 50px;
+  opacity: 0.9;
+}
+
+.mode-buttons {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mode-button {
+  background: white;
+  border: none;
+  border-radius: 15px;
+  padding: 40px 35px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 250px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.mode-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.mode-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.mode-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.mode-description {
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.ai-explanation {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.ai-explanation h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.ai-explanation p {
+  margin-bottom: 15px;
+  opacity: 0.95;
+}
+
+.ai-explanation ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.ai-explanation li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+  opacity: 0.95;
+}
+
+@media (max-width: 768px) {
+  .mode-selector h1 {
+    font-size: 2.5rem;
+  }
+
+  .mode-buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .mode-button {
+    min-width: 100%;
+  }
+
+  .ai-explanation {
+    font-size: 0.9rem;
+  }
+}
